@@ -5,8 +5,8 @@
 ---
 
 ## #HTML  
-- [Friendship Zone App](./01_FriendshipZone/Homepage.html)  
-- [AutoMob-Mechanic App](./02_AutoMob_MechanicApp/home.html)
+- [Friendship Zone App](https://capstone-projects.netlify.app/01_friendshipzone/homepage)  
+- [AutoMob-Mechanic App](https://capstone-projects.netlify.app/02_automob_mechanicapp/home)
 
 ---
 
