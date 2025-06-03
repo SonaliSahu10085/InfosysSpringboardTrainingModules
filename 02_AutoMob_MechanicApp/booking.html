@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booking | AutoMob-Mechanic</title>
+  </head>
+  <body>
+    <header>
+      <h1><a href="home.html" target="_self">AutoMob-Mechanic</a></h1>
+      <nav>
+        <a href="home.html" target="_self">Home</a>|
+        <a href="services.html" target="_self">Services</a>|
+        <a href="booking.html" target="_self">Booking</a>|
+        <a href="mailto:contact@automob.co.in" target="_self"
+          >contact@automob.co.in &#9993;</a
+        >|
+        <a href="tel:+919999999999" target="_self">999 999 9999 &#9742;</a>
+      </nav>
+      <hr />
+    </header>
+    <article>
+      <h2>Book Your Service</h2>
+      <form action="./appointment.html" method="post" novalidate>
+        <!-- Name -->
+        <label>Name:</label>
+        <input
+          type="text"
+          name="name"
+          placeholder="John Daub"
+          required
+          pattern="[A-Za-z]+ [A-Za-z]+"
+          title="Enter first and last name with only alphabets"
+          autocomplete="off"
+        /><br /><br />
+
+        <!-- Email -->
+        <label>Email Id:</label>
+        <input
+          type="email"
+          name="email"
+          placeholder="john@yahoo.com"
+          required
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+          title="Enter a valid email address (e.g., xyz@abc.com)"
+          autocomplete="off"
+        /><br /><br />
+
+        <!-- Phone Number -->
+        <label>Phone Number:</label>
+        <select name="code" required>
+          <option value="code" selected disabled>code</option>
+          <option value="+213">+213</option>
+          <option value="+91">+91</option>
+          <option value="+244">+244</option>
+          <option value="+61">+61</option>
+        </select>
+        <input
+          type="tel"
+          name="phone"
+          placeholder="9823322332"
+          required
+          pattern="[0-9]{10}"
+          title="Phone number should be exactly 10 digits"
+          autocomplete="off"
+        /><br /><br />
+
+        <!-- Select Service -->
+        <label>Select Service:</label>
+        <select name="service" required>
+          <option value="PMS">Preventive Maintenance Service</option>
+          <option value="BRS">Body Repair Service</option>
+          <option value="CCS">Car Care Service</option></select
+        ><br /><br />
+
+        <!-- Car Make -->
+        <label>Car Make:</label>
+        <input
+          type="text"
+          name="carMake"
+          list="car-make-options"
+          placeholder="Suzuki, toyota..."
+          required
+          autocomplete="off"
+        />
+        <datalist id="car-make-options">
+          <option value="Mahindra"></option>
+          <option value="Honda"></option>
+          <option value="Hyundai"></option>
+          <option value="Ford"></option>
+          <option value="Toyota"></option>
+          <option value="Nissan"></option></datalist
+        ><br /><br />
+
+        <!-- Car Model -->
+        <label>Car Model:</label>
+        <input
+          type="text"
+          name="carModel"
+          placeholder="Alto, Innova..."
+          required
+          autocomplete="off"
+        /><br /><br />
+
+        <!-- Fuel Type -->
+        <label>Fuel Type:</label>
+        <input type="radio" name="fuel" value="Petrol" required />Petrol
+        <input type="radio" name="fuel" value="Diesel" />Diesel
+        <input type="radio" name="fuel" value="LPG" />LPG
+        <input type="radio" name="fuel" value="Others" />Others<br /><br />
+
+        <!-- Kilometers Ran -->
+        <label>Kilometers Ran:</label>
+        <input
+          type="number"
+          name="kilometers"
+          placeholder="...km"
+          min="0"
+          required
+          autocomplete="off"
+        /><br /><br />
+
+        <button type="submit">Schedule an Appointment</button>
+      </form>
+      <br />
+      <br />
+      <br />
+    </article>
+    <footer>
+      <hr />
+      Copyright © 2020 AutoMob-Mechanic. All Rights Reserved.
+    </footer>
+  </body>
+</html>

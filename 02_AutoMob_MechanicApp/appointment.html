@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Appointment | AutoMob-Mechanic</title>
+  </head>
+  <body>
+    <header>
+      <h1><a href="home.html" target="_self">AutoMob-Mechanic</a></h1>
+      <nav>
+        <a href="home.html" target="_self">Home</a>|
+        <a href="services.html" target="_self">Services</a>|
+        <a href="booking.html" target="_self">Booking</a>|
+        <a href="mailto:contact@automob.co.in" target="_self"
+          >contact@automob.co.in &#9993;</a
+        >|
+        <a href="tel:+919999999999" target="_self">999 999 9999 &#9742;</a>
+      </nav>
+      <hr />
+    </header>
+    <article>
+      <h2>Schedule Your Appointment</h2>
+      <form action="./booking-success.html" method="post" novalidate>
+        <!-- Appointment Date -->
+        <label>Appointment Date:</label>
+        <input
+          type="date"
+          name="date"
+          title="Enter Date"
+          autocomplete="off"
+        /><br /><br />
+
+        <!-- Address -->
+        <label>Address:</label>
+        <textarea
+          name="address"
+          cols="30"
+          rows="10"
+          title="Enter your address"
+          autocomplete="off"
+        ></textarea
+        ><br /><br />
+
+        <!-- City -->
+        <label>City:</label>
+        <input
+          type="text"
+          name="city"
+          placeholder="Mumbai, Pune...."
+          required
+          autocomplete="off"
+        /><br /><br />
+
+        <!-- State -->
+        <label>State:</label>
+        <input
+          type="text"
+          name="state"
+          list="state-options"
+          placeholder="Kerala, Maharashtra..."
+          required
+          autocomplete="off"
+        />
+        <datalist id="state-options">
+          <option value="Assam"></option>
+          <option value="Bihar"></option>
+          <option value="Gujarat"></option>
+          <option value="Goa"></option>
+        </datalist>
+        <br /><br />
+
+        <!-- Send Notification -->
+        <label>Send Notification:</label>
+        <input
+          type="checkbox"
+          name="sendnotification"
+          value="email"
+          required
+          autocomplete="off"
+        />Email
+        <input
+          type="checkbox"
+          name="sendnotification"
+          value="sms"
+        />SMS<br /><br />
+
+        <button type="submit">Book</button>
+      </form>
+      <br />
+      <br />
+      <br />
+    </article>
+    <footer>
+      <hr />
+      Copyright © 2020 AutoMob-Mechanic. All Rights Reserved.
+    </footer>
+  </body>
+</html>
